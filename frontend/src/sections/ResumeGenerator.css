@@ -1,0 +1,223 @@
+/* 🌙 Dark / Light mode friendly base */
+:root {
+  --bg-light: #f9f9f9;
+  --bg-dark: #0d1117;
+  --text-light: #222;
+  --text-dark: #f1f1f1;
+  --accent: #007bff;
+  --card-light: #ffffff;
+  --card-dark: #161b22;
+  --border: rgba(153, 42, 42, 0.1);
+  --border-color: #ccc;
+  --card-bg: #1e1e2f;
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #3b82f6;
+  --border-color: #333;
+}
+
+body.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  border-color: var(--border-color);
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  border-color: var(--border);
+}
+
+/* 🧩 Resume Container */
+.resume-generator {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+  transition: background 0.3s ease;
+  background-color: var(--bg-dark);
+}
+
+.resume-form {
+  flex: 1;
+  min-width: 350px;
+  max-width: 600px;
+  background-color: var(--card-dark);
+  color: var(--text-dark);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+  margin-bottom: 30px;
+
+}
+
+body.light .resume-form {
+  background-color: var(--card-light);
+  color: var(--text-light);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+
+}
+
+.resume-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--accent);
+  transition: 0.4s;
+}
+
+/* 🧠 Headings */
+.resume-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--accent);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* 🔤 Inputs */
+.resume-form input,
+.resume-form textarea,
+.resume-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  outline: none;
+  background: transparent;
+  color: inherit;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+body.light .resume-form input,
+body.light .resume-form textarea {
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+}
+
+.resume-form input:focus,
+.resume-form textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* 🎯 Buttons */
+.resume-form button {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+
+}
+
+.resume-form button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+}
+
+/* 📄 Resume Preview */
+.resume-preview {
+  flex: 1;
+  min-width: 350px;
+  max-width: 600px;
+  background-color: var(--card-dark);
+  color: var(--text-dark);
+  padding: 25px;
+  margin-left: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+  margin-bottom: 30px;
+}
+
+body.light .resume-preview {
+  background-color: var(--card-light);
+  color: var(--text-light);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.resume-preview h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 10px;
+  color: var(--accent);
+  font-weight: 700;
+
+}
+
+/* 🧾 PDF Download Button */
+.download-btn {
+  display: block;
+  margin: 25px auto 0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #007bff, #00bcd4);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+}
+
+.download-btn:hover {
+  background: linear-gradient(90deg, #0056b3, #0097a7);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,123,255,0.4);
+  transition: 0.3s;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .resume-generator {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    
+
+  }
+
+  .resume-preview {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border: 1px solid var(--border);
+    transition: 0.4s;
+
+  }
+}
