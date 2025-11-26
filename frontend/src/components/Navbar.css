@@ -123,3 +123,140 @@
     display: flex;
   }
 }
+/* Transform menu icon when open */
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+/* ---------- Section Titles ---------- */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.section-title span {
+  color: var(--accent);
+}
+/* ---------- Navbar Specific Styles ---------- */
+.navbar {
+  background: var(--card);
+  box-shadow: 0 2px 8px rgba(51, 61, 153, 0.1);
+}
+.nav-links a {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.nav-btn {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.nav-btn:hover {
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 480px) {
+  .nav-links {
+    width: 100%;
+  }
+}
+  .nav-btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+  .logo {
+    font-size: 1.4rem;
+  }
+
+
+/* ---------- End of Navbar Styles ---------- */
+/* ---------- Resume Generator Specific Styles ---------- */
+.resume-generator {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+  background: var(--bg);
+}
+.generator-form {
+  width: 45%;
+  background: var(--card);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(12, 41, 110, 0.2);
+}
+.resume-preview {
+  width: 50%;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(28, 12, 110, 0.2);
+  overflow-y: auto;
+  max-height: 80vh;
+}
+.download-btn {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.download-btn:hover {
+  background-color: #023e8a;
+  box-shadow: 0 2px 8px rgba(8, 29, 50, 0.2);
+  transform: translateY(-2px);
+}
+/* ---------- Form Elements ---------- */
+.generator-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.generator-form input,
+.generator-form textarea,
+.generator-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+}
+.generator-form input:focus,
+.generator-form textarea:focus,
+.generator-form select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 4px var(--accent-color);
+  outline: none;
+}
+.generator-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+/* ---------- Resume Preview Styles ---------- */
+.resume-preview h2,
+.resume-preview h3,
+.resume-preview p {
+  margin-bottom: 15px;
+  color: var(--text);
+}

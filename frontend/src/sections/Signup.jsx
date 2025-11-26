@@ -42,8 +42,8 @@ export default function Signup() {
   };
 
   return (
-    <section className="signup-container">
-      <div className="signup-card card">
+    <section className="signup-container fade-in">
+      <div className="signup-card card ">
         <h2>Sign up</h2>
 
         <form className="signup-form" onSubmit={handleSubmit}>

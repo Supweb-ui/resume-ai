@@ -43,8 +43,8 @@ export default function Login() {
   };
 
   return (
-    <section className="login-container">
-      <div className="login-card card">
+    <section className="login-container fade-in">
+      <div className="login-card card ">
         <h2>Login</h2>
 
         <form className="login-form" onSubmit={handleSubmit}>
@@ -75,10 +75,13 @@ export default function Login() {
         </form>
 
         <div className="login-footer">
-          Don't have an account? <Link to="/signup">Sign up</Link>
+          Don't have an account? <Link to="/signup">Sign up</Link><br />
+          Don't remember? <Link to="/reset">Reset Password</Link> <br />
+          Don't have an account? <Link to="/guest">Continue as Guest</Link> 
         </div>
 
         {message && <div style={{ marginTop: 12 }} className="small">{message}</div>}
+        
       </div>
     </section>
   );

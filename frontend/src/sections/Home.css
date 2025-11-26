@@ -672,3 +672,15 @@ footer {
   box-shadow: 0 0 12px rgba(14, 110, 206, 0.1);
    box-shadow: 0 2px 8px rgb(103, 67, 204)
 }
+.template-card p:hover {
+  color: var(--accent);
+  text-shadow: 0 0 12px rgba(59, 130, 246, 0.9);
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
+   box-shadow: 0 2px 8px rgb(59, 130, 246);
+  transition: 0.3s;
+}
+.signup-form input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+

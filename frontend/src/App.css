@@ -4,6 +4,7 @@
   padding: 2rem;
   text-align: center;
 
+
 }
 
 .logo {
@@ -13,15 +14,28 @@
   transition: filter 300ms;
   margin-bottom: 1rem;
   filter: drop-shadow(0 0 0px #646cffaa);
+  transform: scale(1);
+}
 
+.logo.react {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 0px #61dafbaa);
+  transform: scale(1);
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
   margin-bottom: 1rem;
+
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
   margin-bottom: 1rem;
+  transform: scale(1.1);
+
 }
 
 @keyframes logo-spin {
@@ -69,5 +83,18 @@
   &:hover {
     filter: drop-shadow(0 0 2px #646cffaa);
     margin-bottom: 1rem;
+    transform: scale(1.1);
+
   }
+  &:active {
+    transform: scale(0.9);
+  }
+  read more {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+
+
 }
+

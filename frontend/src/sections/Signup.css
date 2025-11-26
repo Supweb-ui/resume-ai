@@ -142,4 +142,25 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 
+
 }
+@media (max-width: 500px) {
+  .signup-card {
+    padding: 30px 20px;
+  }
+
+  .signup-form {
+    padding: 15px;
+  }
+  .signup-form input {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .signup-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+}
+
+

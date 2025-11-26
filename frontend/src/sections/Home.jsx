@@ -5,7 +5,7 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container ">
       
       {/* ---------- HERO SECTION ---------- */}
       <section id="home" className="hero fade-in">
@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         
 
-        <div className="hero-preview">
+        <div className="hero-preview ">
           <div className="preview-card">
             <div className="resume-paper">
               <div className="resume-header">
@@ -53,7 +53,7 @@ export default function Home() {
   <h2>Resume Templates Preview</h2>
   <div className="slider-container">
     <div className="slider-track">
-      <div className="template-card">
+      <div className="template-card ">
         <div className="template-thumb temp1"></div>
         <p>Modern Template</p>
       </div>
@@ -83,9 +83,9 @@ export default function Home() {
 </section>
 
       {/* ---------- FAQ ---------- */}
-      <section className="faq-section fade-in" id="faq">
+      <section className="faq-section fade-in neon-border" id="faq">
         <h2>Frequently Asked Questions</h2>
-        <div className="faq">
+        <div className="faq content">
           <p><strong>1. Is ResumeAI free to use?</strong><br />Yes, you can generate and download resumes for free.</p>
           <p><strong>2. Can I save my resumes?</strong><br />Yes, once you sign up, you can save multiple resumes.</p>
           <p><strong>3. Can I edit my resumes later?</strong><br />Yes, you can re-generate and edit anytime.</p>
@@ -94,6 +94,10 @@ export default function Home() {
           <p><strong>6. Can I use it on mobile?</strong><br />Yes, ResumeAI is mobile-friendly and works on all devices.</p>
           <p><strong>7. What templates are available?</strong><br />We offer Modern, Classic, Creative, and Professional templates.</p>
           <p><strong>8. How to contact support?</strong><br />Email us at <a href="mailto:support@resumeai.com">support@resumeai.com</a></p>
+          <p><strong>9. Can I contribute to ResumeAI?</strong><br />Yes, ResumeAI is open-source. Check out our GitHub repository to contribute.</p>
+          <p><strong>10. Where can I find the source code?</strong><br />The source code is available on <a href="https://github.com/omkarpawar/resume-ai" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+          <p><strong>11. Who developed ResumeAI?</strong><br />ResumeAI was developed by Omkar Pawar, a passionate web developer.</p>
+          <p><strong>12. What technologies were used?</strong><br />ResumeAI is built using React for the frontend, Node.js for the backend, and MongoDB for data storage.</p>
         </div>
       </section>
 
@@ -108,8 +112,14 @@ export default function Home() {
           I built ResumeAI to simplify resume creation for students and job seekers.
           It uses AI to generate tailored resumes based on your input, making the process quick and easy.
           <br /><br />
+          I am constantly improving ResumeAI and adding new features.
+          It is an open-source project, and you can find the code on <a href="https://github.com/omkarpawar/resume-ai" target="_blank" rel="noopener noreferrer">GitHub</a>.
+          <br /><br />
           Feel free to reach out at <a href="mailto:pawaromkar030@gmail.com">pawaromkar030@gmail.com</a>
           for any questions or feedback!
+          I hope ResumeAI helps you land your dream job. 🚀
+          I appreciate your support!
+          I am Omkar Pawar, and this is my passion project.
         
         </p>
       </section>
@@ -130,7 +140,10 @@ export default function Home() {
           </a>
           <a href="https://instagram.com" target="_blank" rel="noreferrer">
             <i className="fab fa-instagram"></i>
-            
+            </a>
+          
+            <a href="https://wa.me/yourphonenumber" target="_blank" rel="noreferrer">
+            <i className="fab fa-whatsapp"></i>
           </a>
         </div>
       </section>
@@ -157,6 +170,14 @@ export default function Home() {
           <div className="feature">
             <i className="fas fa-check-circle"></i>
             <p>Real-time Collaboration</p>
+          </div>
+          <div className="feature">
+            <i className="fas fa-check-circle"></i>
+            <p>Multi-Device Access</p>
+          </div>
+          <div className="feature">
+            <i className="fas fa-check-circle"></i>
+            <p>Secure Data Handling</p>
           </div>
         </div>
       </section>

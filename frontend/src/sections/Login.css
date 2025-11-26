@@ -6,7 +6,8 @@
   background: var(--bg-color);
   transition: 0.3s;
   padding: 20px;
-
+  box-shadow: 0 5px 15px rgba(12, 41, 110, 0.2);
+  
 }
 
 .login-card {
@@ -47,6 +48,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: 0 5px 15px rgba(44, 18, 175, 0.2);
 
 }
 
@@ -62,6 +64,8 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 700;
+  box-shadow: 0 5px 15px rgba(60, 37, 174, 0.2);
+
 
 }
 
@@ -72,13 +76,14 @@
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  
 
   
 }
 
 .login-form button {
   background: var(--accent-color);
-  color: white;
+  color: rgb(216, 166, 166);
   border: none;
   padding: 12px;
   border-radius: 8px;
@@ -88,22 +93,15 @@
   transition: 0.3s;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   font-weight: 700;
   letter-spacing: 1px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  font-weight: 700;
-  letter-spacing: 1px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  font-weight: 700;
-  letter-spacing: 1px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(196, 108, 108, 0.2);
 }
 
 .login-form button:hover {
   opacity: 0.9;
   transform: scale(1.02);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 16px rgba(162, 46, 46, 0.3);
   font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -126,13 +124,14 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(99, 35, 35, 0.2);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
 
 
 }
+
 
 
 .login-footer a:hover {
@@ -146,9 +145,33 @@
   text-transform: uppercase;
 
 
+
 }
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+}
+  .login-form {
+    padding: 15px;
+  }
+  .login-form input {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .login-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .login-footer {
+    font-size: 12px;
   
+  }
   
 
 
-  
+
+
+
+
+

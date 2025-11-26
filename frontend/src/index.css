@@ -31,3 +31,153 @@ textarea{min-height:120px;resize:vertical}
   .desktop-hide{display:none}
   .stack{display:block}
 }
+.neon-border {
+  position: relative;
+  background: #0d0d0d;
+  border-radius: 16px;
+  padding: 20px;
+  overflow: hidden;
+  transition: transform 10s ease-in-out;
+}
+
+/* Hover lift */
+.neon-border:hover {
+  transform: translateY(-6px);
+}
+
+/* RGB animated border */
+.neon-border::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(
+    120deg,
+    #ff00c8,
+    #00eaff,
+    #00ff7b,
+    #ffef00,
+    #ff0099
+  );
+  border-radius: inherit;
+  z-index: -1;
+  background-size: 300% 300%;
+  animation: neonMove 10s linear infinite;
+  filter: blur(6px);
+}
+
+/* Solid inner background */
+.neon-border::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  background: #0d0d0d;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+@keyframes neonMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Neon hover effect */
+.neon-card {
+  background: #0a0a0a;
+  border: 2px solid #1f1f1f;
+  transition: 0.3s ease-in-out;
+}
+
+.neon-card:hover {
+  border-color: #00f3ff;
+  box-shadow: 
+      0 0 10px #00f3ff,
+      0 0 20px #00f3ff,
+      0 0 40px #00f3ff,
+      0 0 80px #00f3ff;
+  transform: translateY(-5px);
+}
+
+/* Optional neon text glow */
+.neon-card:hover h2 {
+  color: #00f3ff;
+  text-shadow: 0 0 10px #00f3ff,
+               0 0 20px #00f3ff,
+               0 0 40px #00f3ff;
+}
+@media (max-width:600px){
+  .container{padding:12px}
+}
+@keyframes neonMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.neon-border {
+  position: relative;
+  background: #0d0d0d;
+  border-radius: 16px;
+  padding: 20px;
+  overflow: hidden;
+  transition: transform 10s ease-in-out;
+}
+/* Hover lift */
+.neon-border:hover {
+  transform: translateY(-6px);
+}
+/* RGB animated border */
+.neon-border::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(
+    120deg,
+    #ff00c8,
+    #00eaff,
+    #00ff7b,
+    #ffef00,
+    #ff0099
+  );
+  border-radius: inherit;
+  z-index: -1;
+  background-size: 300% 300%;
+  animation: neonMove 10s linear infinite;
+  filter: blur(6px);
+}
+/* Solid inner background */
+.neon-border::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  background: #0d0d0d;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+
+
+
+
