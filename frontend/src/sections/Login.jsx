@@ -32,7 +32,7 @@ export default function Login() {
       if (user?.email) localStorage.setItem("user_email", user.email);
 
       setMessage("Login successful! Redirecting...");
-      setTimeout(() => navigate("/generate"), 600);
+      setTimeout(() => navigate("/"), 600);
     } catch (err) {
       console.error(err);
       const errMsg = err.response?.data?.error || "Login failed. Check credentials.";

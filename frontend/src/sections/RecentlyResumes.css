@@ -1,0 +1,128 @@
+.recent-container {
+  min-height: 100vh;
+  padding: 80px 40px 40px 40px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.recent-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.search-box {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 20px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.recent-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.recent-card {
+  background: white;
+  color: black;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.recent-card:hover {
+  transform: scale(1.03);
+}
+
+.recent-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recent-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.recent-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.recent-date {
+  font-size: 12px;
+  color: gray;
+}
+
+.open-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  background: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.delete-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  background: #dc3545;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.preview-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  background: #28a745;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.preview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.open-btn:hover {
+  background: #0056b3;
+}
+.delete-btn:hover {
+  background: #c82333;
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .recent-container {
+    padding: 60px 20px 20px 20px;
+  }
+  .recent-title {
+    font-size: 24px;
+  }
+  .recent-list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 15px;
+  }
+}

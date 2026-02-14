@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 
 const Contact = () => {
@@ -8,14 +9,34 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+ const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Thank you ${formData.name}! We’ll contact you soon.`);
-    setFormData({ name: "", email: "", message: "" });
+
+    emailjs.send(
+      "service_fxpafjr",   // Service ID
+      "template_6rjkmoi",           // Template ID
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      },
+      "xGTkrrvfO2KzaSRoW"   // Public Key
+    )
+    .then(() => {
+      alert("Message sent successfully ✅");
+      setFormData({ name: "", email: "", message: "" });
+    })
+    .catch((error) => {
+      console.log("EmailJS Error:", error);
+      alert("Failed to send message ❌");
+    });
   };
 
   return (
@@ -64,10 +85,10 @@ const Contact = () => {
 
         <div className="contact-info">
           <h3>Get In Touch</h3>
-          <p>Email: <a href="mailto:support@resumeai.com">support@resumeai.com</a></p>
-          <p>Phone: +91 9876543210</p>
+          <p>Email: <a href="mailto:pawaromkar030@gmail.com">pawaromkar030@gmail.com</a></p>
+          <p>Phone: +91 8605532147</p>
           <p>Instagram: <a href="https://instagram.com/resume.ai" target="_blank" rel="noreferrer">@resume.ai</a></p>
-          <p>Address: Pune, Maharashtra, India</p>
+          <p>Address: Nanded, Maharashtra, India</p>
         </div>
       </div>
     </section>

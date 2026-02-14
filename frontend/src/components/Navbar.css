@@ -1,6 +1,6 @@
 :root {
-  --bg: #0b0f19;
-  --card: #101522;
+  --bg: #cfd5e6;
+  --card: #bcc1cd;
   --accent: #3b82f6;
   --text: #e5e7eb;
   --muted: #9ca3af;
@@ -16,8 +16,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 12px rgba(51, 61, 153, 0.1);
+  box-shadow: 0 2px 8px rgba(219, 210, 210, 0.4);
+  box-shadow: 0 0 12px rgba(192, 193, 203, 0.1);
    box-shadow: 0 2px 8px rgb(187, 135, 135)
 }
 

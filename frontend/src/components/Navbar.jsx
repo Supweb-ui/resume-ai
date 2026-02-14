@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
@@ -13,6 +14,7 @@ export default function Navbar() {
       <div className={`nav-links ${open ? "open" : ""}`}>
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/generate">Generate</NavLink>
+        <NavLink to="/recent-resumes">Recently Resumes</NavLink>
         <NavLink to="/templates">Templates</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
